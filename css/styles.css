@@ -1,12 +1,14 @@
 body {
   background-color: #e5e5e5;
   font-family: "Roboto", sans-serif;
-  color: #757575
+  color: #757575;
   margin: 0px;
 }
 
 :root {
   --chromatic-color: #2196f3;
+  --heading-color: #212121;
+  --ussual-font-size: 14px;
 }
 
 /* Устранение лишнего */
@@ -38,11 +40,11 @@ ul {
 
 .header-list {
   display: flex;
-  padding: 15px;
-  margin: 0;
-  list-style: none;
-  border-radius: 4px;
-  background-color: var(--chromatic-color);
+}
+
+.page-footer {
+  background-color: #2f303a;
+  height: 252px;
 }
 
 /* ЛОГОТИП и ССЫЛКИ в футере и хедере */
@@ -74,14 +76,14 @@ ul {
 }
 
 .header-links {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  display: block;
-  margin-left: 50px;
   background-color: #fff;
+  color: var(--heading-color);
+  font-size: var(--ussual-font-size);
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  margin-left: 50px;
 }
 
 .header-links:hover,
@@ -91,10 +93,12 @@ ul {
 
 .header-kontakts {
   color: #757575;
-  font-size: 14px;
+  font-size: var(--ussual-font-size);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  margin-left: 50px;
 }
 
 .header-kontakts:hover,
@@ -104,7 +108,7 @@ ul {
 
 .footer-location {
   color: #ffffff;
-  font-size: 14px;
+  font-size: var(--ussual-font-size);
   font-weight: 400;
   font-style: normal;
   line-height: 1.71;
@@ -113,7 +117,7 @@ ul {
 
 .footer-kontakts {
   color: rgba(100%, 100%, 100%, 60%);
-  font-size: 14px;
+  font-size: var(--ussual-font-size);
   font-weight: 400;
   font-style: normal;
   line-height: 1.71;
@@ -124,6 +128,8 @@ ul {
   background-color: #2f303a;
   height: 600px;
 }
+
+/* Секция Заголовка-1 */
 
 h1 {
   color: #ffffff;
@@ -141,7 +147,7 @@ h1 {
   width: 200px;
   height: 50px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -149,4 +155,95 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
+}
+
+/* Секция Положительных характеристик */
+
+.characteristics {
+  background-color: #ffffff;
+}
+
+.characteristics ul {
+  display: flex;
+}
+
+.characteristics li {
+  width: 270px;
+  margin: 0px 30px;
+}
+
+.characteristics h3 {
+  color: var(--heading-color);
+  font-size: var(--ussual-font-size);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.characteristics p {
+  font-size: var(--ussual-font-size);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Секция "Чем мы занимаемся" */
+
+.what-we-do {
+  background-color: #ffffff;
+}
+
+.what-we-do h2 {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.what-we-do ul {
+  display: flex;
+}
+
+.what-we-do li {
+  margin: 50px 15px 0px 15px;
+}
+
+/* Секция "Наша Команда" */
+
+.our-team {
+  background-color: #f5f4fa;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team h2 {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.our-team ul {
+  display: flex;
+}
+
+.our-team li {
+  background-color: #ffffff;
+  height: 368px;
+  display: block;
+}
+
+.our-team h3 {
+  color: var(--heading-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.our-team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
 }
