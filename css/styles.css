@@ -1,14 +1,22 @@
 body {
-  background-color: #e5e5e5;
+  background-color: var(--bg-color-main);
   font-family: "Roboto", sans-serif;
-  color: #757575;
+  color: var(--text-color-second);
   margin: 0px;
 }
 
 :root {
   --chromatic-color: #2196f3;
+  --logo-header: #000000;
+  --logo-footer: #ffffff;
   --heading-color: #212121;
-  --ussual-font-size: 14px;
+  --bg-color-first: #ffffff;
+  --bg-color-second: #f5f4fa;
+  --bg-color-third: #2f303a;
+  --bg-color-main: #e5e5e5;
+  --text-color-first: #212121;
+  --text-color-second: #757575;
+  --text-color-third: #ffffff;
 }
 
 /* Устранение лишнего */
@@ -29,22 +37,11 @@ ul {
 /* ХЕДЕР и ФУТЕР */
 
 .page-header {
-  background-color: #ffffff;
-  height: 80px;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 215px;
-}
-
-.header-list {
-  display: flex;
+  background-color: var(--bg-color-first);
 }
 
 .page-footer {
-  background-color: #2f303a;
-  height: 252px;
+  background-color: var(--bg-color-third);
 }
 
 /* ЛОГОТИП и ССЫЛКИ в футере и хедере */
@@ -59,7 +56,7 @@ ul {
 }
 
 .logo-header span {
-  color: #000000;
+  color: var(--logo-header);
 }
 
 .logo-footer {
@@ -72,18 +69,15 @@ ul {
 }
 
 .logo-footer span {
-  color: #ffffff;
+  color: var(--logo-footer);
 }
 
 .header-links {
-  background-color: #fff;
   color: var(--heading-color);
-  font-size: var(--ussual-font-size);
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
-  margin-left: 50px;
 }
 
 .header-links:hover,
@@ -92,13 +86,11 @@ ul {
 }
 
 .header-kontakts {
-  color: #757575;
-  font-size: var(--ussual-font-size);
+  color: var(--text-color-second);
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
-  margin-left: 50px;
 }
 
 .header-kontakts:hover,
@@ -107,8 +99,8 @@ ul {
 }
 
 .footer-location {
-  color: #ffffff;
-  font-size: var(--ussual-font-size);
+  color: var(--text-color-third);
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.71;
@@ -117,7 +109,7 @@ ul {
 
 .footer-kontakts {
   color: rgba(100%, 100%, 100%, 60%);
-  font-size: var(--ussual-font-size);
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.71;
@@ -125,14 +117,14 @@ ul {
 }
 
 .heading-one {
-  background-color: #2f303a;
+  background-color: var(--bg-color-third);
   height: 600px;
 }
 
 /* Секция Заголовка-1 */
 
 h1 {
-  color: #ffffff;
+  color: var(--text-color-third);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -142,7 +134,7 @@ h1 {
 }
 
 .order-service-button {
-  color: #ffffff;
+  color: var(--text-color-third);
   background-color: var(--chromatic-color);
   width: 200px;
   height: 50px;
@@ -150,17 +142,17 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 /* Секция Положительных характеристик */
 
 .characteristics {
-  background-color: #ffffff;
+  background-color: var(--bg-color-first);
 }
 
 .characteristics ul {
@@ -174,7 +166,7 @@ h1 {
 
 .characteristics h3 {
   color: var(--heading-color);
-  font-size: var(--ussual-font-size);
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -182,7 +174,7 @@ h1 {
 }
 
 .characteristics p {
-  font-size: var(--ussual-font-size);
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -190,7 +182,7 @@ h1 {
 /* Секция "Чем мы занимаемся" */
 
 .what-we-do {
-  background-color: #ffffff;
+  background-color: var(--bg-color-first);
 }
 
 .what-we-do h2 {
@@ -213,7 +205,7 @@ h1 {
 /* Секция "Наша Команда" */
 
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--bg-color-second);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -230,7 +222,7 @@ h1 {
 }
 
 .our-team li {
-  background-color: #ffffff;
+  background-color: var(--bg-color-first);
   height: 368px;
   display: block;
 }
