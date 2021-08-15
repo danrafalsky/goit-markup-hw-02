@@ -2,14 +2,16 @@ body {
   background-color: var(--bg-color-main);
   font-family: "Roboto", sans-serif;
   color: var(--text-color-second);
-  margin: 0px;
 }
 
 :root {
   --chromatic-color: #2196f3;
+  --chromatic-color-hover: #188ce8;
   --logo-header: #000000;
   --logo-footer: #ffffff;
+  --button-shadow: rgba(0%, 0%, 0%, 15%);
   --heading-color: #212121;
+  --footer-kontakts-color: rgba(100%, 100%, 100%, 60%);
   --bg-color-first: #ffffff;
   --bg-color-second: #f5f4fa;
   --bg-color-third: #2f303a;
@@ -44,7 +46,7 @@ ul {
   background-color: var(--bg-color-third);
 }
 
-/* ЛОГОТИП и ССЫЛКИ в футере и хедере */
+/* ЛОГОТИП в футере и хедере */
 
 .logo-header {
   font-family: "Raleway", sans-serif;
@@ -72,6 +74,8 @@ ul {
   color: var(--logo-footer);
 }
 
+/* ССЫЛКИ в футере и хедере */
+
 .header-links {
   color: var(--heading-color);
   font-size: 14px;
@@ -98,17 +102,8 @@ ul {
   color: var(--chromatic-color);
 }
 
-.footer-location {
-  color: var(--text-color-third);
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .footer-kontakts {
-  color: rgba(100%, 100%, 100%, 60%);
+  color: var(--footer-kontakts-color);
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -116,19 +111,22 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.heading-one {
-  background-color: var(--bg-color-third);
-  height: 600px;
+.footer-kontakts:hover,
+.footer-kontakts:focus {
+  color: var(--text-color-third);
 }
 
 /* Секция Заголовка-1 */
+
+.heading-one {
+  background-color: var(--bg-color-third);
+}
 
 h1 {
   color: var(--text-color-third);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -142,26 +140,21 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--button-shadow);
   border-radius: 4px;
+}
+
+.order-service-button:hover,
+.order-service-button:focus {
+  background-color: var(--chromatic-color-hover);
 }
 
 /* Секция Положительных характеристик */
 
 .characteristics {
   background-color: var(--bg-color-first);
-}
-
-.characteristics ul {
-  display: flex;
-}
-
-.characteristics li {
-  width: 270px;
-  margin: 0px 30px;
 }
 
 .characteristics h3 {
@@ -194,19 +187,10 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-.what-we-do ul {
-  display: flex;
-}
-
-.what-we-do li {
-  margin: 50px 15px 0px 15px;
-}
-
 /* Секция "Наша Команда" */
 
 .our-team {
   background-color: var(--bg-color-second);
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -217,14 +201,8 @@ h1 {
   line-height: 1.17;
 }
 
-.our-team ul {
-  display: flex;
-}
-
 .our-team li {
   background-color: var(--bg-color-first);
-  height: 368px;
-  display: block;
 }
 
 .our-team h3 {
@@ -235,7 +213,6 @@ h1 {
 }
 
 .our-team p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
